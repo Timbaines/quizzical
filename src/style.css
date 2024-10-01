@@ -12,7 +12,6 @@ html, body {
     text-align: center;
     background: #F5F7FB;
     color: #293264;
-    height: 100vh;
 }
 
 .blob-top {
@@ -51,8 +50,11 @@ html, body {
     padding: 15px
 }
 
+.question-container:first-of-type {
+    margin-top: 5vh;
+}
+
 .question-container {
-    margin-bottom: 20px;
     padding: 20px;
     border-bottom: 1px solid #DBDEF0;
 }
@@ -71,10 +73,9 @@ html, body {
 }
 
 .quiz-container {
-    margin-bottom: 20px;
-    padding: 15px;
+    padding: 10px;
     max-width: 960px;
-
+    margin: auto;
 }
 
 .btn-start, .btn-check-answer, .btn-play-again {
@@ -91,7 +92,7 @@ html, body {
 
 .btn-answer {
     margin: 5px;
-    padding: 10px 15px;
+    padding: 7px 15px;
     border-radius: 10px;
     background-color: #F5F7FB;
     color: #293264;
