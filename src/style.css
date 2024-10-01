@@ -13,15 +13,17 @@ html, body {
     text-align: center;
     background: #F5F7FB;
     color: #293264;
-    overflow: hidden;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,9 +94,11 @@ main {
 .quiz-container {
     position: relative;
     max-width: 960px;
+    width: 100%;
     margin: 50px auto 0 auto; /* Ensure margin-top is 50px */
     z-index: 1000;
     padding: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 .btn-start, .btn-check-answer, .btn-play-again {
@@ -151,10 +155,9 @@ main {
     font-weight: bold;
 }
 
-
 @media (max-width: 960px) {
-    html, body, main {
-        overflow: hidden;
+    main {
+        overflow-y: auto; /* Ensures scrolling is allowed */
+        overflow-x: hidden; /* Prevent horizontal scrolling */
     }
-
 }
