@@ -5,6 +5,7 @@
 }
 
 html, body {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,9 +13,8 @@ html, body {
     text-align: center;
     background: #F5F7FB;
     color: #293264;
-    height: 100%;
-    width: 100%;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 main {
@@ -147,15 +147,14 @@ main {
 }
 
 .score-display {
-    margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
 }
 
 
 @media (max-width: 960px) {
-    html, body {
-        overflow: auto;
+    html, body, main {
+        overflow: hidden;
     }
 
 }
