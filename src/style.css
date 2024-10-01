@@ -36,6 +36,7 @@ html, body {
     z-index: 100;
 }
 
+
 .start-container {
     display: flex;
     flex-direction: column;
@@ -55,8 +56,10 @@ html, body {
 }
 
 .question-container {
+    position: relative;
     padding: 20px;
     border-bottom: 1px solid #DBDEF0;
+    z-index: 1000;
 }
 
 .question-container h3 {
@@ -66,16 +69,20 @@ html, body {
 }
 
 .selection-container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     margin-top: 10px;
+    z-index: 1000;
 }
 
 .quiz-container {
+    position: relative;
     padding: 10px;
     max-width: 960px;
     margin: auto;
+    z-index: 1000;
 }
 
 .btn-start, .btn-check-answer, .btn-play-again {
@@ -124,13 +131,13 @@ html, body {
     justify-content: end;
     margin-top: 20px;
     gap: 20px;
+    z-index: 1000;
 }
 
 .score-display {
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
-    z-index: 200;
 }
 
 @media (max-width: 1551px) {
