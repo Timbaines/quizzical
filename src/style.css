@@ -5,6 +5,7 @@
 }
 
 html, body {
+    position: relative;
     font-family: Karla, sans-serif;
     background: #F5F7FB;
     color: #293264;
@@ -41,6 +42,7 @@ html, body {
 
 
 .start-container {
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,10 +55,12 @@ html, body {
 }
 
 .quiz-container {
+    max-width: 960px;
     padding: 15px;
 }
 
 .question-container {
+    max-width: 960px;
     padding: 20px;
     border-bottom: 1px solid #DBDEF0;
     z-index: 1000;
@@ -69,6 +73,7 @@ html, body {
 }
 
 .selection-container {
+    max-width: 960px;
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
