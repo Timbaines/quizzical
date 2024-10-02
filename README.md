@@ -3,9 +3,9 @@
 ## About
 A trivia application using the Open Trivia Database API.
 
-Quizzical is a trivia game that presents users with an introduction screen that has a start quiz button. After the user clicks start they will be given the chance to answer 5 questions from the trivia database API.
+Quizzical is a trivia game that presents users with an introduction screen that has a start quiz button. Once the user clicks "Start Game", they will be given the chance to answer 5 questions from the open trivia database API.
 
-The user will click on a check answers button that will prompt them to a page showing the questions and answers. The correct answers will show in green and the users incorrect answer will show red. The page will show the user how many out of 5 they got correct with a button giving them the option to play again.
+After the user selects their responses, they will proceeed to click "Check Answers" that renders their selection and the answers. The correct answers are highlighted green and the incorrect answers are highlighted red. The page will display their score out of 5 they got correct with an option to click the "Play Again" button.
 
 ## API Reference
 [Open Trivia Database](https://opentdb.com/api_config.php)
